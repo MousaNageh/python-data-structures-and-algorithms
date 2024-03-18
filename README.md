@@ -22,9 +22,9 @@
   * `O(n!):` Factorial time. The execution time of the algorithm grows factorialy with the increase in input size. Algorithms that generate all possible permutations of a set fall into this category.
 
   ### rules of Calculating BIG 0
-    1. `Worst case` 
-    2. `Remove constants` 
-    3. `Different terms of input`
-    4. `remove Drop None Dominant` 
+    1. Worst case 
+    2. Remove constants 
+    3. Different terms of input
+    4. remove Drop None Dominant
 
   
