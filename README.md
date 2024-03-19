@@ -1,8 +1,12 @@
 # python data structures and algorithms
 
 ## 1. BIG O:
+  `it's all about messure scalability [for speed(CPU) and space(RAM)]: when the input increase, what will be the output. else it's about readability`
+   ![Big o All about](./1-big_o/all_about.png)
 
-  ![Big o](./1-big_o/1-big_o.jpeg)
+  * time and space complexity chart for all Big O types
+    
+      ![Big o](./1-big_o/1-big_o.jpeg)
 
   * `O(1):` Constant time. The algorithm takes the same amount of time to execute, regardless of the size of the input data set.
   ![O(1) constant time](./1-big_o/3-constant-o(1).png)
@@ -24,7 +28,9 @@
   ### rules of Calculating BIG 0
     1. Worst case 
     2. Remove constants 
-    3. Different terms of input
+    3. Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
+      + for steps in order
+      * for nested steps
     4. remove Drop None Dominant
 
   
