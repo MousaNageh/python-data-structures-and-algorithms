@@ -4,9 +4,9 @@
   `it's all about messure scalability [for speed(CPU) and space(RAM)]: when the input increase, what will be the output. else it's about readability`
    ![Big o All about](./1-big_o/all_about.png)
 
-  * time and space complexity chart for all Big O types
-    
-      ![Big o](./1-big_o/1-big_o.jpeg)
+### 1.1 time complexity
+  ### time complexity chart for all Big O types  
+  ![Big o](./1-big_o/1-big_o.jpeg)
 
   * `O(1):` Constant time. The algorithm takes the same amount of time to execute, regardless of the size of the input data set.
   ![O(1) constant time](./1-big_o/3-constant-o(1).png)
@@ -25,12 +25,14 @@
 
   * `O(n!):` Factorial time. The execution time of the algorithm grows factorialy with the increase in input size. Algorithms that generate all possible permutations of a set fall into this category.
 
-  ### rules of Calculating BIG 0
-    1. Worst case 
-    2. Remove constants 
-    3. Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b)
-      + for steps in order
-      * for nested steps
-    4. remove Drop None Dominant
-
+#### 1.2 rules of Calculating BIG N
+  ##### 1. Worst case 
+  ##### 2. Remove constants 
+  ##### 3. Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b), + for steps in order, * for nested steps
+  ##### 4. remove Drop None Dominant
   
+### 1.3 space complexity (What causes Space complexity?)
+  ##### 1. Variables
+  ##### 2. Data Structures
+  ##### 3. Function Call
+  ##### 4. Allocations
