@@ -36,3 +36,18 @@
   ##### 2. Data Structures
   ##### 3. Function Call
   ##### 4. Allocations
+______________________________________________________
+
+
+## 2. Data Structure:
+  `A data structure is a specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures`
+  ### operations on data structure:
+  * Traversal
+  * nsertion
+  * Deletion
+  * Searching
+  * Sorting
+  * Access
+  * Merging 
+
+  ![O(n^2) data structure BIG O](./data_structure/operations_on_data_structure.png)
