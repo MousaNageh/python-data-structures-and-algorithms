@@ -76,3 +76,15 @@ ______________________________________________________
           * Performance Overhead: Resizing a dynamic array involves allocating new memory and copying elements from the old array, which can be a costly operation in terms of performance.
           * Complexity: The implementation of dynamic arrays is more complex than static arrays because it needs to handle resizing logic.
           * Slightly Slower Access: While element access remains generally fast, the added layer of abstraction and potential for non-contiguous memory allocation can make element access slightly slower than in static arrays.
+  
+  ### Hash Table, Maps, Hash Maps, object or dictionary:
+  `A hash table, also known as a dictionary or hash map in various programming languages, is a data structure that implements an associative array abstract data type, a structure that can map keys to values. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Ideally, the hash function will assign each key to a unique bucket, but this situation is rarely achievable in practice.`
+
+  * Key Characteristics
+    * `Efficiency`: One of the main advantages of hash tables is their ability to provide fast data retrieval. `The average time complexity for both searching for an existing key, inserting a new key, deleting a key is typically close to O(1)`, under the assumption that the hash function is good and maintains a low collision rate.
+
+
+    * `Handling Collisions`: Since a hash function might map more than one key to the same bucket, hash tables use collision resolution methods, such as chaining (where each bucket contains a list of all elements hashed to it) or open addressing (where a collision triggers a probing sequence to find where to store the value).
+      ![hash Collisions](./2-data_structure/2-hash_tables/hash_collision.png)
+
+    * `Dynamic Resizing`: To maintain efficient operations, hash tables may resize themselves based on the number of elements stored. This involves rehashing all existing entries, which can be computationally expensive but is infrequent.

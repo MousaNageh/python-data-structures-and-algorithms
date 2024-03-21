@@ -33,7 +33,7 @@ class MyArray:
         self.__check_index(index)
         self.data[self.len] = None
         self.len += 1
-        # Shift items to the right 
+        # Shift items to the right
         for i in range(self.len - 1, index, -1):
             self.data[i] = self.data[i - 1]
             i -= 1
@@ -58,14 +58,14 @@ class MyArray:
 
     def __len__(self):
         return self.len
-    
+
     def __iter__(self):
         self.start_index = -1
-        
+
         return self
-    
+
     def __next__(self):
-        if self.start_index < self.len -1:
+        if self.start_index < self.len - 1:
             self.start_index += 1
             return self.data[self.start_index]
         else:
