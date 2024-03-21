@@ -33,3 +33,5 @@ def reverse4(string: str):
     return "".join(list_val)
 
 print(reverse('mousa') == reverse2('mousa') == reverse3('mousa')== reverse4('mousa')) 
+
+
