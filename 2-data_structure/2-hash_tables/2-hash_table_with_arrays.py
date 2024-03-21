@@ -9,7 +9,14 @@ class HashTable:
         self.size = 0
     
     def _hash(self, key) -> int:
-        return hash(key) % self.capacity
+        # return hash(key) % self.capacity
+        # or let us build our hash
+        hash = 0
+        key = str(key) 
+        for i in range(len(key)):
+            hash += ord(key[i]) * i 
+        return hash % self.capacity
+            
         
     
     def __setitem__(self, key, value):
