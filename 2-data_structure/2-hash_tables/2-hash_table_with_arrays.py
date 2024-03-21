@@ -56,6 +56,55 @@ class HashTable:
     def __contains__(self, key):
         return self.__getitem__(key)
 
+    def keys(self):
+        keys = [] 
+        for collision in self.table:
+            if collision:
+                for item in collision:
+                    keys.append(item[0])
+        return keys 
+    
+    def values(self):
+        keys = [] 
+        for collision in self.table:
+            if collision:
+                for item in collision:
+                    keys.append(item[0])
+        return keys 
+    
+    def values(self):
+        values = [] 
+        for collision in self.table:
+            if collision:
+                for item in collision:
+                    values.append(item[1])
+        return values 
+    
+    def items(self):
+        items = [] 
+        for collision in self.table:
+            if collision:
+                for item in collision:
+                    items.append(item)
+        return items 
+    
+    
+    def __iter__(self):
+        self.current_index = -1
+        self.exist_item = []
+        for collision in self.table:
+            if collision:
+                for item in collision:
+                    self.exist_item.append(item[0])
+        return self
+    
+    def __next__(self):
+        if self.current_index >= len(self.exist_item) - 1:
+            raise StopIteration 
+        self.current_index +=1 
+        return self.exist_item[self.current_index]
+        
+    
     def __len__(self):
         return self.size
 
@@ -75,12 +124,13 @@ class HashTable:
 my_dict = HashTable()
 
 my_dict["key1"] = 1
-my_dict[1] = 1
+my_dict['key1'] =2
 my_dict["key2"] = "mousa nageh"
-my_dict["1"] = 32
-del my_dict["1"]
-print(my_dict)
-print(len(my_dict))
-print("key2" in my_dict)
-    
-    
+my_dict["key3"] = 32
+# print(my_dict.keys())
+# print(my_dict.values())
+# print(my_dict.items())
+# print("key2" in my_dict)
+
+for key in my_dict:
+    print(key)    
