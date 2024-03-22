@@ -7,6 +7,7 @@ Retrieve: O(1)
 Delete: O(1) 
 Traverse: O(n)
 """
+
 """
 When collisions occur in a hash table, 
 the efficiency of operations such as insertion, search, update, retrieve, and delete can be affected, 
@@ -28,5 +29,3 @@ apple_color = my_dict.get("apple", "not found")  # Retrieve the value for "apple
 del my_dict["apple"]  # Delete the key-value pair with key "apple"
 for key, value in my_dict.items():  # Traverse the dictionary
     print(f"Key: {key}, Value: {value}")
-
-
