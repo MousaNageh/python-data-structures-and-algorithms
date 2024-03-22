@@ -26,16 +26,16 @@
   * `O(n!):` Factorial time. The execution time of the algorithm grows factorialy with the increase in input size. Algorithms that generate all possible permutations of a set fall into this category.
 
 #### 1.2 rules of Calculating BIG N
-  ##### 1. Worst case 
-  ##### 2. Remove constants 
-  ##### 3. Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a*b), + for steps in order, * for nested steps
-  ##### 4. remove Drop None Dominant
+  * ##### 1. Worst case 
+  * ##### 2. Remove constants 
+  * ##### 3. Different inputs should have different variables. O(a*+b). A and B arrays nested would be O(a*b), + for steps in order, * for nested steps
+  * ##### 4. remove Drop None Dominant
   
 ### 1.3 space complexity (What causes Space complexity?)
-  ##### 1. Variables
-  ##### 2. Data Structures
-  ##### 3. Function Call
-  ##### 4. Allocations
+  * ##### 1. Variables
+  * ##### 2. Data Structures
+  * ##### 3. Function Call
+  * ##### 4. Allocations
 ______________________________________________________
 
 
