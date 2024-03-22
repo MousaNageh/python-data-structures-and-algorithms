@@ -201,4 +201,3 @@ single_linked.append(2)
 single_linked.append(3)
 single_linked.append(5)
 
-print(2 in single_linked)
