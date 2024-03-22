@@ -133,6 +133,19 @@ class DoubleLinkedList:
             start += 1
         return matches
 
+    def reverse(self):
+        node = self.tail
+        start_node = self.head
+        end_node = self.tail
+        start = 0
+        end = self.size - 1
+        while start < end:
+            start_node.value, end_node.value = end_node.value, start_node.value
+            start_node = start_node.next
+            end_node = end_node.prev
+            end -= 1
+            start += 1
+
     def __get_node_of_index(self, target_index):
         # Decide the traversal direction based on the target index
         if target_index <= (self.size // 2):
@@ -178,4 +191,6 @@ double.append(4)
 double.append(5)
 double.append(6)
 double.append(3)
-print(double.all_first_match(23))
+print(double)
+double.reverse()
+print(double)

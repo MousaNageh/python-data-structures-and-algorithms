@@ -153,6 +153,18 @@ class SingleLinkedList:
             current = current.next
         return indexes
 
+    def reverse(self):
+        if not self.head or not self.head.next:
+            return
+        current = self.head
+        prev = None
+        while current:
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
+
     def __check_position(self, index, for_search=0):
         if index < 0:
             raise IndexError("index can not be less than 0")
@@ -198,3 +210,6 @@ single_linked.append(6)
 single_linked.append(2)
 single_linked.append(3)
 single_linked.append(5)
+print(single_linked)
+single_linked.reverse()
+print(single_linked)
