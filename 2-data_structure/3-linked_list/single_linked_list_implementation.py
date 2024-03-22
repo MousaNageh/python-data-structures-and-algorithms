@@ -90,7 +90,7 @@ class SingleLinkedList:
         else:
             current_idx = 0
             current = self.head
-            while current_idx < len(self) - 2:
+            while current_idx < self.size - 2:
                 current = current.next
                 current_idx += 1
             self.tail = current.next
@@ -117,10 +117,55 @@ class SingleLinkedList:
             del current
             self.size -= 1
 
+
+    # O(n)
+    def search_by_position(self, position):
+        self.__check_position(position, for_search=1)
+        current = self.head
+        current_index = 0
+        while current_index != position:
+            current = current.next
+            current_index += 1
+        if current:
+            return current.value
+    # O(n)
+    def first_matched_value(self, value):
+        current = self.head
+        index = -1
+        current_index = 0
+        while current:
+            if current.value == value:
+                index = current_index
+                break
+            current_index += 1
+            current = current.next
+        return index
+    # O(n)
+    def all_matched_value(self, value):
+        current = self.head
+        indexes = []
+        current_index = 0
+        while current:
+            if current.value == value:
+                indexes.append(current_index)
+            current_index += 1
+            current = current.next
+        return indexes
+    
+
+
+    def __check_position(self, index, for_search=0):
+        if index < 0:
+            raise IndexError("index can not be less than 0")
+        if index + for_search > self.size:
+            raise IndexError("out of range")
+        
+    
     def __iter__(self):
         self.current = 1
         return self
-
+    
+    # O(n)
     def __next__(self):
         if self.current == 1:
             self.current = self.head
@@ -129,6 +174,9 @@ class SingleLinkedList:
         if not self.current:
             raise StopIteration
         return self.current
+    
+    def __contains__(self, key):
+        return self.first_matched_value(key)
 
     def __str__(self) -> str:
         text = ""
@@ -137,12 +185,6 @@ class SingleLinkedList:
             text += str(current) + " --> "
             current = current.next
         return text.strip(" --> ")
-
-    def __check_position(self, index):
-        if index < 0:
-            raise IndexError("index can not be less than 0")
-        if index > self.size:
-            raise IndexError("out of range")
 
     def __len__(self):
         return self.size
@@ -154,6 +196,9 @@ single_linked.append(3)
 single_linked.append(4)
 single_linked.append(5)
 single_linked.append(6)
+single_linked.append(6)
+single_linked.append(2)
+single_linked.append(3)
+single_linked.append(5)
 
-for x in single_linked:
-    print(x)
+print(2 in single_linked)
