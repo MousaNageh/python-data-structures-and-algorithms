@@ -113,4 +113,4 @@ ______________________________________________________
 
     * `Double Linked List :` A double (or doubly) linked list extends the single linked list by allowing traversal in both directions. Each node in a double linked list contains three components: data, a reference to the next node, and a reference to the previous node. The head's previous link is null, as is the next link of the last node, clearly defining the list's boundaries.
       
-      ![Double linked list](./2-data_structure/3-linked_list/double_linked_list.png)
+    ![Double linked list](./2-data_structure/3-linked_list/double_linked_list.png)
