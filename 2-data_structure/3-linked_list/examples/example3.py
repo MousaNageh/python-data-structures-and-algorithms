@@ -10,7 +10,7 @@ Output: [2,3]
 
 '''
 
-def delete_duplicates(self, head):
+def delete_duplicates(head):
 
     if not head or not head.next:
         return head 
