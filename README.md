@@ -100,3 +100,28 @@ ______________________________________________________
   * `Double Linked List :` A double (or doubly) linked list extends the single linked list by allowing traversal in both directions. Each node in a double linked list contains three components: data, a reference to the next node, and a reference to the previous node. The head's previous link is null, as is the next link of the last node, clearly defining the list's boundaries.
     
     ![Double linked list](./2-data_structure/3-linked_list/double_linked_list.png)
+
+
+  ### Stack:
+  `A stack is a fundamental data structure in computer science that operates on a last-in, first-out (LIFO) principle. Imagine a stack of plates: you can only add a new plate to the top of the stack, and when you remove a plate, you take the top one off. This is exactly how a stack data structure works with data.`
+  * Here are the key operations associated with a stack:
+
+    * `Push:` Adds an item to the top of the stack. If the stack is full, this operation might result in a stack overflow.
+    * `Pop:` Removes the item on the top of the stack and returns it. If the stack is empty, this operation might result in a stack underflow.
+    * `Peek or Top:` Returns the item on the top of the stack without removing it. This allows you to look at the top item without modifying the stack.
+    * `IsEmpty:` Checks whether the stack is empty. If it is, operations like pop cannot be performed without resulting in an error.
+
+    ![Stack](./2-data_structure/4-stack/stack.webp)
+
+
+  ### Queue:
+  `A queue is fundamental data structure in computer science, but it operates on a first-in, first-out (FIFO) principle, which is different from the last-in, first-out (LIFO) principle of a stack. Imagine a queue in a supermarket: the first person to get in line is the first one to be served and leave the line, and new people join the end of the queue.`
+  * Here are the key operations associated with a queue:
+
+    * `Enqueue:` Adds an item to the end (rear) of the queue. This is akin to a new person joining the end of the line.
+    * `Dequeue:`  Removes and returns the item at the front of the queue. This is like the person at the front of the line being served and leaving the queue.
+    * `Front:` Returns the item at the front of the queue without removing it, allowing you to see who's next to be served without changing the queue's order.
+    * `Rear:` Returns the item at the rear of the queue without removing it, letting you see who is last in the queue currently.
+    * `IsEmpty:` Checks whether the queue is empty. If it is, operations like dequeue cannot be performed without resulting in an error.
+    
+    ![Stack](./2-data_structure/5-queue/Queue.png)
