@@ -115,7 +115,7 @@ ______________________________________________________
 
 
   ### Queue:
-  `A queue is fundamental data structure in computer science, but it operates on a first-in, first-out (FIFO) principle, which is different from the last-in, first-out (LIFO) principle of a stack. Imagine a queue in a supermarket: the first person to get in line is the first one to be served and leave the line, and new people join the end of the queue.`
+  * `A queue is fundamental data structure in computer science, but it operates on a first-in, first-out (FIFO) principle, which is different from the last-in, first-out (LIFO) principle of a stack. Imagine a queue in a supermarket: the first person to get in line is the first one to be served and leave the line, and new people join the end of the queue.`
   * Here are the key operations associated with a queue:
 
     * `Enqueue:` Adds an item to the end (rear) of the queue. This is akin to a new person joining the end of the line.
@@ -125,3 +125,38 @@ ______________________________________________________
     * `IsEmpty:` Checks whether the queue is empty. If it is, operations like dequeue cannot be performed without resulting in an error.
     
     ![Stack](./2-data_structure/5-queue/Queue.png)
+  
+  ### Binary Tree:
+  * `A binary tree is a fundamental data structure in computer science, which consists of nodes arranged in a hierarchical structure. Each node in a binary tree has a few components: a data element, and pointers or references to at most two other nodes, known as the left child and the right child. The topmost node in the tree is called the root. Binary trees are a subset of tree data structures where every node can have at most two children.`
+    #### roles:
+      * every node consist of value, left pointer (can be null) and right pointer (can be null)
+      * every node can has zero, one or two child nodes 
+      * every node has only one parent
+    ![Binary Tree](./2-data_structure/6-trees/binary_tree/binary_tree.png)
+    #### prefect vs full Binary Tree
+      *  A full binary tree: also known as a proper or strictly binary tree, is a tree in which every node has either 0 or 2 children; no nodes have only 1 child.
+
+      * prefect pinary: 
+        * Every level of the tree is fully filled. 
+        * The number of nodes at level l is 2^l, where the root level is considered level 0.
+        * The total number of nodes in a perfect binary tree of height h is `2^(h+1) - 1, where height is the number of edges in the longest path from the root to a leaf`
+        `, or 2^(l) - 1 where l is the number of levels start with 1`
+        
+    ![prefect vs full Binary Tree](./2-data_structure/6-trees/binary_tree/perfect_full_bt.png)
+
+    ### Binary search tree 
+      * small value got to the left of the node 
+      * large value go to the right of the tree 
+     #### balanced search tree 
+    ![prefect vs full Binary Tree](./2-data_structure/6-trees/binary_tree/binary_search_tree.png) 
+
+      #### unbalanced search tree 
+      ![prefect vs full Binary Tree](./2-data_structure/6-trees/binary_tree/unblanced_search_tree.png) 
+
+    ### auto balanced trees:
+    `Binary trees that automatically maintain their balance to ensure operations like insertion, deletion, and lookup remain efficient are known as self-balancing binary trees. Several types of self-balancing binary trees are used in computer science for various applications, each with unique rules for balancing. Some of the most well-known include:`
+
+    * `AVL Trees:`  AVL trees maintain balance by ensuring that the heights of the two child subtrees of any node differ by no more than one. If at any time they differ by more than one, rebalancing is done to restore this property.
+
+    * `Red-Black Trees:` This type of self-balancing tree ensures balance through an ingenious system of node coloring (each node is either red or black) and several additional rules. Red-black trees guarantee that the path from the root to the farthest leaf is no more than twice as long as the path from the root to the nearest leaf, thus ensuring a balanced tree.
+  
