@@ -158,5 +158,36 @@ ______________________________________________________
 
     * `AVL Trees:`  AVL trees maintain balance by ensuring that the heights of the two child subtrees of any node differ by no more than one. If at any time they differ by more than one, rebalancing is done to restore this property.
 
-    * `Red-Black Trees:` This type of self-balancing tree ensures balance through an ingenious system of node coloring (each node is either red or black) and several additional rules. Red-black trees guarantee that the path from the root to the farthest leaf is no more than twice as long as the path from the root to the nearest leaf, thus ensuring a balanced tree.
+    * `Red-Black Trees:` This type of self-balancing tree ensures balance through an ingenious system of node coloring (each node is either red or black) and several additional rules. Red-black trees guarantee that the path from the root to the farthest leaf is no more than twice as long as   the path from the root to the nearest leaf, thus ensuring a balanced tree.
+
+    ### Binary Heap tree : left two right insertion
+      * `min binary Heap Tree` : parent value must be small than the two children
+
+      * `max binary Heap Tree` : parent value must be greater than the two children
+
+    ![heap tree](./2-data_structure/6-trees/binary_heap/binary_heap.png)
+
+
+      #### we can use Binary head to build `Priority Queue`
   
+
+  ### Graph
+  `A Graph Data Structure is a collection of nodes connected by edges. It’s used to represent relationships between different entities. Graph algorithms are methods used to manipulate and analyze graphs, solving various problems like finding the shortest path or detecting cycles.`
+
+  ![Graph](./2-data_structure/7-graph/graph.png)
+
+
+  `linked list is type of tree, and tree is type of graph`
+  
+  #### Graph types:
+
+  ##### Differenc Between Directed and UnDirected Graphs
+
+  ![Graph](./2-data_structure/7-graph/DifferenceBetween_Directed_UnDirected_Graphs1.jpg)
+
+  ##### weighted vs unweighted graph
+
+  ![Graph](./2-data_structure/7-graph/weigh_Graph.png  )
+
+  ##### cyclic vs acyclic graph
+  ![Graph](./2-data_structure/7-graph/cyclic-and-acyclic-graphs.png)
