@@ -145,7 +145,23 @@ class BinarySearchTree:
                 current = current.right
         return False
     
+    # O(n)
+    def depth(self):
+        max_depth = 0
+        if self.root:  
+            queue = [(self.root, 1)]
+            while queue:
+                current, depth = queue.pop(0)
+                if depth > max_depth:
+                    max_depth = depth 
+                
+                if current.left:
+                    queue.append((current.left, depth + 1))
+                if current.right:
+                    queue.append((current.right, depth + 1))
+        return max_depth
          
+   
     def in_order(self):
         cur = self.root 
         self._in_order(cur)
