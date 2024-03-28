@@ -191,3 +191,7 @@ ______________________________________________________
 
   ##### cyclic vs acyclic graph
   ![Graph](./2-data_structure/7-graph/cyclic-and-acyclic-graphs.png)
+
+### to describe a graph
+
+![to describe a graph](./2-data_structure/7-graph/build/describe_graph.png)
