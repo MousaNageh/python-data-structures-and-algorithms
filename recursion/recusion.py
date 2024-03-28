@@ -34,7 +34,7 @@ def fibonacci(n: int):
         else:
             return 1 
         
-print(fibonacci(43))      
+print(fibonacci(10))      
 
 # O(n)
 def fibonacci2(n: int):
@@ -53,6 +53,20 @@ def fibonacci2(n: int):
     
     return res2
 
-print(fibonacci2(1000))      
+print(fibonacci2(10))      
 
+
+
+def reverse_string(text: str):
+    counter = len(text) -1 
+    def reverser(counter):
+        if counter == 0:
+            return text[counter]
+        else:
+            return text[counter] + reverser(counter -1)
+    return reverser(counter)
+
+print(reverse_string('mousa'))
+        
+    
     
