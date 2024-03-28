@@ -52,7 +52,7 @@ ______________________________________________________
 
   ![O(n^2) data structure BIG O](./2-data_structure/operations_on_data_structure.png)
 
-  ### ARRAYS :
+  ### 2.1 ARRAYS :
   `Arrays are fundamental data structures used in programming to store sequences of elements. They come in two main types: static and dynamic arrays, each with its own set of advantages and disadvantages.`
   * `Static Arrays :`  static array has a fixed size, which means the number of elements it can hold is determined at the time of its creation. Its   size cannot be altered once it is allocated.
     *  `Pros`:
@@ -77,7 +77,7 @@ ______________________________________________________
           * Complexity: The implementation of dynamic arrays is more complex than static arrays because it needs to handle resizing logic.
           * Slightly Slower Access: While element access remains generally fast, the added layer of abstraction and potential for non-contiguous memory allocation can make element access slightly slower than in static arrays.
   
-  ### Hash Table, Maps, Hash Maps, object or dictionary:
+  ### 2.2 Hash Table, Maps, Hash Maps, object or dictionary:
   `A hash table, also known as a dictionary or hash map in various programming languages, is a data structure that implements an associative array abstract data type, a structure that can map keys to values. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found. Ideally, the hash function will assign each key to a unique bucket, but this situation is rarely achievable in practice.`
 
   * Key Characteristics
@@ -89,7 +89,7 @@ ______________________________________________________
 
     * `Dynamic Resizing`: To maintain efficient operations, hash tables may resize themselves based on the number of elements stored. This involves rehashing all existing entries, which can be computationally expensive but is infrequent.
   
-  ### linked list:
+  ### 2.3 linked list:
     
   `A linked list is a fundamental data structure used in computer science to organize items sequentially, with each item pointing to the next one in the sequence. It's particularly useful in scenarios where efficient insertion and deletion of elements are necessary. Unlike arrays, linked lists do not require continuous memory space. Here are the primary types of linked lists:`
 
@@ -102,7 +102,7 @@ ______________________________________________________
     ![Double linked list](./2-data_structure/3-linked_list/double_linked_list.png)
 
 
-  ### Stack:
+  ### 2.4 Stack:
   `A stack is a fundamental data structure in computer science that operates on a last-in, first-out (LIFO) principle. Imagine a stack of plates: you can only add a new plate to the top of the stack, and when you remove a plate, you take the top one off. This is exactly how a stack data structure works with data.`
   * Here are the key operations associated with a stack:
 
@@ -114,7 +114,7 @@ ______________________________________________________
     ![Stack](./2-data_structure/4-stack/stack.webp)
 
 
-  ### Queue:
+  ### 2.5 Queue:
   * `A queue is fundamental data structure in computer science, but it operates on a first-in, first-out (FIFO) principle, which is different from the last-in, first-out (LIFO) principle of a stack. Imagine a queue in a supermarket: the first person to get in line is the first one to be served and leave the line, and new people join the end of the queue.`
   * Here are the key operations associated with a queue:
 
@@ -126,7 +126,7 @@ ______________________________________________________
     
     ![Stack](./2-data_structure/5-queue/Queue.png)
   
-  ### Binary Tree:
+  ### 2.6 Binary Tree:
   * `A binary tree is a fundamental data structure in computer science, which consists of nodes arranged in a hierarchical structure. Each node in a binary tree has a few components: a data element, and pointers or references to at most two other nodes, known as the left child and the right child. The topmost node in the tree is called the root. Binary trees are a subset of tree data structures where every node can have at most two children.`
     #### roles:
       * every node consist of value, left pointer (can be null) and right pointer (can be null)
@@ -171,7 +171,7 @@ ______________________________________________________
       #### we can use Binary head to build `Priority Queue`
   
 
-  ### Graph
+  ### 2.7 Graph
   `A Graph Data Structure is a collection of nodes connected by edges. It’s used to represent relationships between different entities. Graph algorithms are methods used to manipulate and analyze graphs, solving various problems like finding the shortest path or detecting cycles.`
 
   ![Graph](./2-data_structure/7-graph/graph.png)
@@ -195,3 +195,11 @@ ______________________________________________________
 ### to describe a graph
 
 ![to describe a graph](./2-data_structure/7-graph/build/describe_graph.png)
+
+______________________________________________________
+
+## 3. algorithms:
+`algorithms is steps to solve a problem or steps to make any action`
+```python 
+data structures + algorithms = program
+```
